@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="MetaShield">
+  <meta name="author" content="MetaShield">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>MetaShield - 识别钓鱼网站 保护加密资产</title>
+
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/metashield.css "> -->
+
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script> -->
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    /*微信二维码*/
+    .weixin {
+      position: relative;
+    }
+
+    .weixin::after {
+      content: url(assets/images/qr.png);
+      position: absolute;
+      right: -28px;
+      top: -135px;
+      z-index: 99;
+      width: 420px;
+      height: 420px;
+      border: 5px solid #0095ba;
+      border-radius: 4px;
+      transform-origin: top right;
+      transform: scale(0);
+      opacity: 0;
+      -webkit-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+
+    .weixin:hover::after {
+      transform: scale(1);
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div>
+
+    <div class="container" style="padding: 100px 50px 10px;">
+      <button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover"
+        data-placement="left" data-content="左侧的 Popover 中的一些内容">
+        左侧的 Popover
+      </button>
+      <button type="button" class="btn btn-primary" title="Popover title" data-container="body" data-toggle="popover"
+        data-placement="top" data-content="顶部的 Popover 中的一些内容">
+        顶部的 Popover
+      </button>
+      <button type="button" class="btn btn-success" title="Popover title" data-container="body" data-toggle="popover"
+        data-placement="bottom" data-content="底部的 Popover 中的一些内容">
+        底部的 Popover
+      </button>
+      <button type="button" class="btn btn-warning" title="Popover title" data-container="body" data-toggle="popover"
+        data-placement="right" data-content="右侧的 Popover 中的一些内容">
+        右侧的 Popover
+      </button>
+    </div>
+
+  </div>
+
+  <a class="facebook weixin" href="javascript:">
+    <i class="fab fa-weixin">查看我的微信</i>
+  </a>
+
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/templatemo-custom.js"></script>
+
+
+
+
+  <script>
+    $(function () {
+      $("[data-toggle='popover']").popover();
+      // alert("aaa");
+    });
+  </script>
+
+</body>
+
+</html>

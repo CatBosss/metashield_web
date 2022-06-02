@@ -206,3 +206,31 @@
     border: transparent;
     letter-spacing: 1px;
   }
+
+  /*微信二维码*/
+  .weixin {
+    position: relative;
+  }
+
+  .weixin::after {
+    content: url(../images/qr.png);
+    position: absolute;
+    right: 0px;
+    top: -250px;
+    z-index: 99;
+    width: 150px;
+    height: 150px;
+    /* border: 5px solid #0095ba;
+    border-radius: 4px; */
+    transform-origin: top right;
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .weixin:hover::after {
+    transform: scale(0.5);
+    opacity: 1;
+  }
