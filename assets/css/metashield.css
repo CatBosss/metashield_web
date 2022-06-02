@@ -1,0 +1,135 @@
+.logo img {
+    width: 226px;
+    height: auto;
+}
+
+.main-header-button a {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 0px 25px;
+    letter-spacing: 0.25px;
+    /* background: linear-gradient(270deg, #0066FF 0.01%, #149CFF 100%);
+    filter: drop-shadow(0px 4px 4px rgba(140, 133, 130, 0.2));
+    border-radius: 37px;
+    height: 40px;
+    line-height: 40px; */
+    background: linear-gradient(270deg, #0066FF 0.01%, #149CFF 100%);
+    box-shadow: 0px 2px 3px rgba(140, 133, 130, 0.2);
+    border-radius: 37px;
+
+}
+
+.header-area .main-nav .nav li .main-header-button a {
+    color: #fff;
+}
+
+.middle-section {
+    /* background: linear-gradient(270deg, rgba(244, 116, 34, 0) 0%, #FF7600 0.01%, #FFAF14 100%); */
+    background: linear-gradient(270deg, #0066FF 0.01%, #149CFF 100%);
+    filter: drop-shadow(0px 4px 4px rgba(140, 133, 130, 0.2));
+    margin-top: 120px;
+    padding: 80px;
+}
+
+.middle-section img {
+    width: 109px;
+    margin-bottom: 40px;
+}
+
+.middle-logo {
+    width: 66%;
+    border-color: #fff;
+    border-style: dotted;
+    text-align: left;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.gongxian {
+    background: #F9F7F6;
+    margin-top: 120px;
+    padding: 80px;
+}
+
+.gongxian a {
+    color: #000;
+}
+
+.footer {
+    margin-top: 120px;
+    padding: 80px;
+}
+
+.footer .col-12 {
+    border-top: 1px solid #B4ADAA;
+}
+
+.footer .main-nav {
+    min-height: 60px;
+    background: transparent;
+}
+
+.footer .main-nav .footer-logo {
+    /* line-height: 100px; */
+    margin-top: 30px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.footer .main-nav .logo {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-p {
+    float: left;
+    position: relative;
+    margin: 40px 0px 0px 10px;
+}
+
+.section-heading .nav img {
+    padding: 10px;
+}
+
+.our-services .section-heading p {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.footer .nav {
+    float: right;
+    margin-top: 30px;
+    margin-right: 0px;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 999;
+}
+
+.footer .main-nav .nav li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
