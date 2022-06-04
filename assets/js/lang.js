@@ -6,8 +6,9 @@
     else{
         var lang = navigator.browserLanguage;
     }
+
     if(lang.indexOf('zh') > -1){
-        document.location.href = 'index.html';
+        // document.location.href = 'index.html';
     }
     else{
         document.location.href = 'indexen.html';
