@@ -18,12 +18,10 @@ Table of contents
 --------------------------------------------- */
 /* 
 ---------------------------------------------
-font & reset css
+font & reset css for EN
 --------------------------------------------- 
 */
-/* @import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900'); */
-@import url('https://fonts.useso.com/css?family=Noto+Sans+SC:100,300,400,500,700,900');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300');
   
 /* 
 ---------------------------------------------
@@ -99,7 +97,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   background-color: #fff;
   -ms-text-size-adjust: 100%;
@@ -139,7 +137,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ::selection {
@@ -170,7 +168,6 @@ body {
 
 .page-section {
   margin-top: 120px;
-  /* margin-left: 180px; */
 }
 
 .section-heading h2 {
@@ -618,7 +615,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #0066FF!important;
+    color: #fe3f40!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -679,7 +676,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #0066FF!important;
+    color: #fe3f40!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
