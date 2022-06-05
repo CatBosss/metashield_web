@@ -624,8 +624,8 @@ progress {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
     /*rui*/
-    padding-right: var(--bs-gutter-x, 11.25rem);
-    padding-left: var(--bs-gutter-x, 11.25rem);
+    padding-right: var(--bs-gutter-x, 10rem);
+    padding-left: var(--bs-gutter-x, 10rem);
   }
 }
 @media (min-width: 1400px) {
