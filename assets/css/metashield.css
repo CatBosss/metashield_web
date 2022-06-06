@@ -227,6 +227,33 @@
     letter-spacing: 1px;
   }
 
+  .footer .text-primary{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #0B82FF;
+  }
+
+  .footer .info-r{
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+      padding-left: 1.25rem;
+  }
+
+  .footer a{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2E3034;
+  }
+
+  .footer .cpr p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2E3034;
+  }
+
   /*微信二维码*/
   .weixin {
     position: relative;
@@ -256,6 +283,19 @@
   .weixin:hover::after {
     transform: scale(0.5);
     opacity: 1;
+  }
+
+  #about-us .section-heading .nav {
+    align-items: center;
+  }
+
+  #about-us .section-heading .nav li:last-child {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  #about-us .section-heading .nav a {
+    color: #2E3034;
   }
 
   @media (max-width: 767px) {
