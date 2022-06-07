@@ -1,0 +1,99 @@
+<button class="translate" id="en">English</button>
+<button class="translate" id="zh">Chinese</button>
+
+<ul>
+    <li class="lang" key="HOME"></li>
+    <li class="lang" key="ABOUT"></li>
+    <li class="lang" key="CONTACT"></li>
+</ul>
+
+<div class="row info-r wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+    <div class="col-md-2 col-sm-3">
+        <p class="text-primary mb-4">了解更多</p>
+        <ul class="list-unstyled footer-list-menu">
+            <li><a href="#">Github</a></li>
+            <li><a href="#">加入我们</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col-sm-3">
+        <p class="text-primary mb-4">媒体资讯</p>
+        <ul class="list-unstyled footer-list-menu">
+            <li><a class="link" key="twitter" href="#">Twitter</a></li>
+            <li><a class="link" key="discord" href="#">Discord</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col-sm-3">
+        <p class="text-primary mb-4">法务条款</p>
+        <ul class="list-unstyled footer-list-menu">
+            <li><a class="link" href="https://www.metashield.cc/disclaimer">免责声明</a></li>
+            <li><a href="https://www.metashield.cc/privacy-policy">隐私协议</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+
+<script>
+    var arrLang = {
+        "en": {
+            "HOME": "Home",
+            "ABOUT": "About Us",
+            "CONTACT": "Contact Us",
+        },
+        "zh": {
+            "HOME": "首页",
+            "ABOUT": "关于我们",
+            "CONTACT": "联络我们",
+        },
+        "link": {
+            "weblink-cn": "https://www.metashield.cc/",
+            "weblink-en": "https://www.metashield.cc/en",
+            "disclaimer": "https://www.metashield.cc/disclaimer",
+            "privacy-policy": "https://www.metashield.cc/privacy-policy",
+            "twitter": "https://twitter.com/metashieldOS",
+            "discord": "https://discord.gg/Fw7sbfbkJ7",
+            "notion": "https://www.notion.so/buidler/Buidler-DAO-Space-8f30fcbb72d94c40b40e7b431cc71db0",
+            "daotwitter": "https://twitter.com/BuidlerDAO",
+            "join": "",
+            "download": "",
+            "github": "",
+            "report": "https://docs.google.com/forms/d/e/1FAIpQLSf-hDJPCfkAfSlSFFmKAGeFDGtEQ1tyKhxtkDE8sU5uQ1BrMA/viewform?usp=sf_link",
+        }
+
+    };
+
+    // The default language is English
+    var lang = "en";
+    // Check for localStorage support
+    if ('localStorage' in window) {
+        var lang = localStorage.getItem('lang') || navigator.language.slice(0, 2);
+        if (!Object.keys(arrLang).includes(lang)) lang = 'en';
+    }
+
+    $(document).ready(function () {
+        $(".lang").each(function (index, element) {
+            $(this).text(arrLang[lang][$(this).attr("key")]);
+        });
+
+        $(".link").each(function (index, element) {
+            $(this).attr('href', arrLang["link"][$(this).attr("key")]);
+        });
+    });
+
+    // get/set the selected language
+    $(".translate").click(function () {
+        var lang = $(this).attr("id");
+
+        // update localStorage key
+        if ('localStorage' in window) {
+            localStorage.setItem('lang', lang);
+            console.log(localStorage.getItem('lang'));
+        }
+
+        $(".lang").each(function (index, element) {
+            $(this).text(arrLang[lang][$(this).attr("key")]);
+        });
+    });
+</script>
